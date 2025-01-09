@@ -20,8 +20,8 @@ export default function PageNavbar() {
         <Navbar.Collapse id="responsive-navbar-nav" className="me-auto">
           <Nav>
             <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/pages/About">About Me</Nav.Link>
             <Nav.Link as={Link} to="/pages/Projects">Projects</Nav.Link>
+            <Nav.Link as={Link} to="/pages/Experience">Experience</Nav.Link>
             <Nav.Link as={Link} to="/pages/Contact">Contact Me</Nav.Link>
           </Nav>
         </Navbar.Collapse>

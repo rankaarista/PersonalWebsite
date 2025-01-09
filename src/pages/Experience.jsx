@@ -1,4 +1,4 @@
-export const Home = () => {
+export const Experience = () => {
     return (
       <div>
         <h1>Welcome to My Portfolio</h1>
