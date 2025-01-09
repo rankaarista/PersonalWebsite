@@ -11,7 +11,7 @@ export default function PageRouter() {
   return (
     <HashRouter>
       <Routes>
-           <Route path="/" element={<MainPage />}>
+          <Route path="/" element={<MainPage />}>
           <Route index element={<Home />} />
           <Route path="pages/About" element={<About />} />
           <Route path="pages/Projects" element={<Projects />} />
