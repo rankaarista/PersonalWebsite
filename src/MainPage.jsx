@@ -1,9 +1,14 @@
-import PageNavbar from "./PageNavbar";
+import { Container } from 'react-bootstrap';
+import { Outlet } from 'react-router-dom';
+import PageNavbar from './PageNavbar';
 
-const MainPage = () => {
+export default function MainPage() {
   return (
-    <PageNavbar />
+    <div>
+      <PageNavbar />
+      <Container className="mt-4">
+        <Outlet />
+      </Container>
+    </div>
   );
-};
-
-export default MainPage;
+}
