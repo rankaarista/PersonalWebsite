@@ -5,8 +5,22 @@ import crest from './assets/uw-crest.svg'
 
 export default function PageNavbar() {
 return (
-    <Navbar bg="white" variant="dark" fixed="top" expand="sm" collapseOnSelect
-    style={{marginLeft: "8px", marginRight: "8px", borderLeft: "8px", borderRight: "8px"}}>
+    <Navbar 
+        className="bg-white/50" 
+        fixed="top" 
+        expand="sm" 
+        collapseOnSelect
+        style={{
+            marginLeft: "8px", 
+            marginRight: "8px", 
+            marginTop: "8px", 
+            borderRadius: "10px",
+            backgroundColor: "rgba(255, 255, 255, 0.7)",
+            backdropFilter: "blur(10px)",
+            boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.15)",
+            border: "1px solid rgba(255, 255, 255, 0.18)",
+            padding: "10px"
+        }}>
         <Container>
             <Navbar.Brand as={Link} to="/pages/About">
                     <img

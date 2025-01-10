@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+body {
+  @apply bg-orange-500;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
