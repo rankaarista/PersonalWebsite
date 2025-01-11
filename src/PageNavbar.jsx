@@ -5,29 +5,33 @@ import crest from './assets/uw-crest.svg'
 
 export default function PageNavbar() {
 return (
-    <Navbar 
-        className="bg-white/50" 
-        fixed="top" 
-        expand="sm" 
+    <Navbar
+        fixed="top"
+        expand="sm"
         collapseOnSelect
         style={{
-            marginLeft: "8px", 
-            marginRight: "8px", 
-            marginTop: "8px", 
-            borderRadius: "10px",
-            backgroundColor: "rgba(255, 255, 255, 0.7)",
-            backdropFilter: "blur(10px)",
-            boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.15)",
-            border: "1px solid rgba(255, 255, 255, 0.18)",
-            padding: "10px"
-        }}>
+            paddingLeft: "100px",
+            paddingRight: "100px",
+            paddingTop: "5px",      
+            paddingBottom: "5px",   
+            background: "rgba(255, 255, 255, 0.35)",  
+            boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.4)",  // Reduced shadow intensity
+            backdropFilter: "blur(12px)",  // Reduced blur for clearer frosted effect
+            WebkitBackdropFilter: "blur(12px)",
+            borderRadius: "50px",
+            border: "1px solid rgba(255, 255, 255, 0.3)",  // Lighter border color
+            marginTop: "10px",
+            marginLeft: "420px",
+            marginRight: "420px",
+            marginBottom: "30px",
+  }}>
         <Container>
             <Navbar.Brand as={Link} to="/pages/About">
                     <img
                             alt="Badger Buddies Logo"
                             src={crest}
-                            width="50"
-                            height="50"
+                            width="40"
+                            height="40"
                             className="d-inline-block align-top"
                     />
             </Navbar.Brand>
