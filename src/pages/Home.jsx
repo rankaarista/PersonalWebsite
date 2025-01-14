@@ -1,13 +1,11 @@
 export const Home = () => {
     return (
       <div style={{
-        backgroundColor: "#f3ede7",
-        borderRadius: "20px",
+        backgroundColor: "",
+        borderRadius: "30px",
         }}>
-        <h3>Hello!</h3>
-          <p>
-            
-          </p>
+        <h1>Welcome to My Portfolio</h1>
+          
       </div>
     );
 };
