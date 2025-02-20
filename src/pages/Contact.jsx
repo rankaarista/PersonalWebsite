@@ -1,4 +1,4 @@
-export const Contact = () => {
+export default function Contact (){
     return (
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">Contact Me</h1>
