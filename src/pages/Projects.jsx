@@ -1,5 +1,6 @@
-import { Card } from "react-bootstrap";
+import { Card, Container, Row, Col, Pagination } from "react-bootstrap";
 import { useEffect, useState } from "react";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Projects () {
 
@@ -11,21 +12,22 @@ export default function Projects () {
       .catch(error => console.error('Error loading projects:', error));
   }, []);
 
+
+
+
   return (
-    <div>
-      {projects.map((project) => {
-        return (
-          <Card>
-            <Card.Body>
-              <Card.Title>{project.id}</Card.Title>
-              <Card.Text>
-                <p>{project.title}</p>
-                <p>{project.description}</p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        );
-      })}
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", width: "100vw" }}>
+        <Container fluid>
+        <Row className="justify-content-center g-4">
+              {
+                projects.map(project => (
+                  <Col xs={12} xl={3} lg={4} md={6} sm={12} key={project.id}>
+                    <ProjectCard {...project} />
+                  </Col>
+                ))
+              }
+          </Row>
+      </Container>
     </div>
   );
 };
